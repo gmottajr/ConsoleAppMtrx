@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SpiralMatrixConsoleApp;
+using System;
 
 namespace ConsoleAppMtrx
 {
@@ -6,7 +7,9 @@ namespace ConsoleAppMtrx
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");  
+            Console.WriteLine("-------------------------- Spiral --------------------------");
+            var mtx = SpiralMatrixWm.SpiralRecursive(6);
+            SpiralMatrixWm.PrintArray(mtx);
             Console.ReadKey();
         }
     }
